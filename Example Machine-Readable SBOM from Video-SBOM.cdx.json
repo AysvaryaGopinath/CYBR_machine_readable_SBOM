@@ -1,0 +1,99 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:6fed6440-bf28-4f6f-ba26-d7fdf3b592bb",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-11-24T23:39:11Z",
+    "tools": [
+      {
+        "vendor": "Netrise Inc",
+        "name": "Netrise",
+        "version": "08594041d0152444ecab58bfc9ac8ca16864f529"
+      }
+    ],
+    "component": {
+      "bom-ref": "90000503820e63519809cafb97419b8e01",
+      "type": "firmware",
+      "name": "Example Machine-Readable SBOM from Video",
+      "version": "1.0.47"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "c78082c8af4a8b2112fc7615ed52c51d01",
+      "type": "application",
+      "supplier": {
+        "name": ""
+      },
+      "name": "ACME Device",
+      "version": "1.0.47",
+      "components": []
+    },
+    {
+      "bom-ref": "d94ea10854f4aebf7dcf452ae3fa4a6f01",
+      "type": "application",
+      "supplier": {
+        "name": "dropbear_ssh_project"
+      },
+      "name": "Dropbear SSH",
+      "version": "2020.79",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:dropbear_ssh_project:dropbear_ssh:2020.79:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/dropbear@2020.79",
+      "components": []
+    },
+    {
+      "bom-ref": "f906f87ce2e009c21bc6c0c1e82d8ca701",
+      "type": "library",
+      "supplier": {
+        "name": ""
+      },
+      "name": "lwIP",
+      "version": "2.0.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:generic/lwip@2.0.3",
+      "components": []
+    },
+    {
+      "bom-ref": "1c88cc8243611c62e8c61a51accdb2ed01",
+      "type": "library",
+      "supplier": {
+        "name": ""
+      },
+      "name": "uClibc",
+      "version": "0.9.33.2",
+      "purl": "pkg:generic/uclibc@0.9.33.2",
+      "components": []
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "c78082c8af4a8b2112fc7615ed52c51d01",
+      "dependsOn": [
+        "f906f87ce2e009c21bc6c0c1e82d8ca701",
+        "1c88cc8243611c62e8c61a51accdb2ed01",
+        "d94ea10854f4aebf7dcf452ae3fa4a6f01"
+      ]
+    },
+    {
+      "ref": "90000503820e63519809cafb97419b8e01",
+      "dependsOn": [
+        "c78082c8af4a8b2112fc7615ed52c51d01"
+      ]
+    }
+  ]
+}
