@@ -2,7 +2,7 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:6fed6440-bf28-4f6f-ba26-d7fdf3b592bb",
+  "serialNumber": "urn:uuid:b78d0ee6-58a6-4f9e-ba6b-9319522307c8",
   "version": 1,
   "metadata": {
     "timestamp": "2024-11-24T23:39:11Z",
@@ -14,59 +14,40 @@
       }
     ],
     "component": {
-      "bom-ref": "90000503820e63519809cafb97419b8e01",
+      "bom-ref": "pkg:generic/WEATHERSTATION@1.0.47",
       "type": "firmware",
-      "name": "Example Machine-Readable SBOM from Video",
+      "name": "WEATHER STATION",
       "version": "1.0.47"
     }
   },
+
   "components": [
     {
-      "bom-ref": "c78082c8af4a8b2112fc7615ed52c51d01",
-      "type": "application",
-      "supplier": {
-        "name": ""
-      },
-      "name": "ACME Device",
-      "version": "1.0.47",
-      "components": []
-    },
-    {
-      "bom-ref": "d94ea10854f4aebf7dcf452ae3fa4a6f01",
-      "type": "application",
-      "supplier": {
-        "name": "dropbear_ssh_project"
-      },
-      "name": "Dropbear SSH",
-      "version": "2020.79",
-      "licenses": [
-        {
-          "license": {
-            "name": "MIT"
-          }
-        }
-      ],
-      "cpe": "cpe:2.3:a:dropbear_ssh_project:dropbear_ssh:2020.79:*:*:*:*:*:*:*",
-      "purl": "pkg:generic/dropbear@2020.79",
-      "components": []
-    },
-    {
-      "bom-ref": "f906f87ce2e009c21bc6c0c1e82d8ca701",
+      "bom-ref": " cpe:/:coapthon_project:coapthon:4.0.2",
       "type": "library",
-      "supplier": {
-        "name": ""
-      },
-      "name": "lwIP",
-      "version": "2.0.3",
-      "licenses": [
-        {
-          "license": {
-            "name": "BSD-3-Clause"
-          }
-        }
-      ],
-      "purl": "pkg:generic/lwip@2.0.3",
-      "components": []
+      "publisher":"Angelo Castellucci",
+      "name": "CoAPthon ",
+      "version": "4.0.2 " ,
+       "cpe": "cpe:/:coapthon_project:coapthon:4.0.2:*:*:*:*:*:*:*",
+      "purl": "" 
+    },
+    {
+      "bom-ref": "cpe:/:uip_project:uip:1.0",
+      "type": "library",
+      "publisher": "Adam Dunkels ",
+      "name": "uIP",
+      "version": "1.0",
+      "cpe": "cpe:/:uip_project:uip:1.0:*:*:*:*:*:*:*",
+      "purl": ""
+    },
+    {
+      "bom-ref": "cpe:/:eclipse:tinydtls:0.9 ",
+      "type": "library",
+      "publisher":"Eclipse Foundation ",
+      "name" : "TinyDTLS",
+      "version": "0.9",
+      "cpe" :   "cpe:/:eclipse:tinydtls:0.9:*:*:*:*:*:*:*",
+      "purl": ""
     },
     {
       "bom-ref": "1c88cc8243611c62e8c61a51accdb2ed01",
@@ -80,20 +61,18 @@
       "components": []
     }
   ],
+
+
   "dependencies": [
     {
       "ref": "c78082c8af4a8b2112fc7615ed52c51d01",
       "dependsOn": [
-        "f906f87ce2e009c21bc6c0c1e82d8ca701",
-        "1c88cc8243611c62e8c61a51accdb2ed01",
-        "d94ea10854f4aebf7dcf452ae3fa4a6f01"
       ]
     },
     {
       "ref": "90000503820e63519809cafb97419b8e01",
       "dependsOn": [
-        "c78082c8af4a8b2112fc7615ed52c51d01"
-      ]
+    ]
     }
   ]
 }
