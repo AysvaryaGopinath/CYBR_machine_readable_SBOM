@@ -1,7 +1,7 @@
 {
-  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.5",
+  "specVersion": "1.4",
   "serialNumber": "urn:uuid:b78d0ee6-58a6-4f9e-ba6b-9319522307c8",
   "version": 1,
   "metadata": {
@@ -20,7 +20,6 @@
       "version": "1.0.47"
     }
   },
-
   "components": [
     {
       "bom-ref": " cpe:/:coapthon_project:coapthon:4.0.2",
@@ -50,19 +49,42 @@
       "purl": ""
     },
     {
-      "bom-ref": "1c88cc8243611c62e8c61a51accdb2ed01",
+      "bom-ref": "cpe:/:amazon:freertos:10.3.1",
+      "type": "operating-system",
+      "publisher":"Amazon",
+      "name" : "FreeRTOS",
+      "version": "10.3.1",
+      "cpe" :   "cpe:/:amazon:freertos:10.3.1:*:*:*:*:*:*:*",
+      "purl": ""
+    },
+    {
+      "bom-ref": "cpe:/:lwip_project:lwip:2.0.3",
       "type": "library",
-      "supplier": {
-        "name": ""
-      },
-      "name": "uClibc",
-      "version": "0.9.33.2",
-      "purl": "pkg:generic/uclibc@0.9.33.2",
-      "components": []
+      "publisher":"Adam Dunkels",
+      "name" : "LwIP",
+      "version": "2.0.3",
+      "cpe" :   "cpe:/:lwip_project:lwip:2.0.3:*:*:*:*:*:*:*",
+      "purl": ""
+    },
+    {
+      "bom-ref": "cpe:/:arm:mbed_tls:2.16.6",
+      "type": "library",
+      "publisher":"ARM",
+      "name" : "mbedTLS",
+      "version": "2.16.0",
+      "cpe" :   "cpe:/:arm:mbed_tls:2.16.6:*:*:*:*:*:*:*",
+      "purl": ""
+    },
+    {
+      "bom-ref": "cpe:/:contiki-os:contiki-os:3.0",
+      "type": "operating-system",
+      "publisher":"Contiki",
+      "name" : "Contiki OS",
+      "version": "3.0",
+      "cpe" :   "cpe:/:contiki-os:contiki-os:3.0:*:*:*:*:*:*:*",
+      "purl": ""
     }
   ],
-
-
   "dependencies": [
     {
       "ref": "c78082c8af4a8b2112fc7615ed52c51d01",
@@ -71,6 +93,25 @@
     },
     {
       "ref": "90000503820e63519809cafb97419b8e01",
+      "dependsOn": [
+    ]
+    },
+    {
+      "ref": "cpe:/:amazon:freertos:10.3.1",
+      "dependsOn": [
+    ]
+    },
+    {
+      "ref": "cpe:/:lwip_project:lwip:2.0.3",
+      "dependsOn": [
+    ]
+    },
+    {
+      "ref": "cpe:/:arm:mbed_tls:2.16.6",
+      "dependsOn": [
+    ]
+    },{
+      "ref": "cpe:/:contiki-os:contiki-os:3.0",
       "dependsOn": [
     ]
     }
