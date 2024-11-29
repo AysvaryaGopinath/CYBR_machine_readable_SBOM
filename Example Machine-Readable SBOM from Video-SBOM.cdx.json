@@ -83,6 +83,75 @@
       "version": "3.0",
       "cpe" :   "cpe:/:contiki-os:contiki-os:3.0:*:*:*:*:*:*:*",
       "purl": ""
+    },
+    {
+      "bom-ref": "cpe:/a:eclipse:paho_java_client:1.2.0",
+      "type": "library",
+      "publisher":"Eclipse Foundation",
+      "name" : "Paho MQTT",
+      "version": "1.2.3",
+      "cpe" :   "cpe:/a:eclipse:paho_java_client:1.2.0:*:*:*:*:*:*:*",
+      "purl": ""
+      "properties": [
+        {
+          "key": "end-of-support",
+          "value": "N/A"
+        },
+        {
+          "key": "component-support",
+          "value": "Supported"
+        },
+        {
+          "key": "latest-version",
+          "value": "2.1.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cpe:/o:zephyrproject:zephyr:2.1.0",
+      "type": "operating-system",
+      "publisher":"Zephyr Project",
+      "name" : "Zephyr OS",
+      "version": "2.3.0",
+      "cpe" :   "cpe:/o:zephyrproject:zephyr:2.1.0:*:*:*:*:*:*:*",
+      "purl": ""
+      "properties": [
+        {
+          "key": "end-of-support",
+          "value": "N/A"
+        },
+        {
+          "key": "component-support",
+          "value": "Supported"
+        },
+        {
+          "key": "latest-version",
+          "value": "4.0"
+        }
+      ]     
+    },
+    {
+      "bom-ref": "cpe:/a:wolfssl:wolfssl:4.4.0",
+      "type": "library",
+      "publisher":"wolfSSL Inc.",
+      "name" : "wolfSSL",
+      "version": "4.4.0",
+      "cpe" :   "cpe:/a:wolfssl:wolfssl:4.4.0:*:*:*:*:*:*:*",
+      "purl": ""
+      "properties": [
+        {
+          "key": "end-of-support",
+          "value": "N/A"
+        },
+        {
+          "key": "component-support",
+          "value": "Supported"
+        },
+        {
+          "key": "latest-version",
+          "value": "5.7.4"
+        }
+      ]
     }
   ],
   "dependencies": [
@@ -110,10 +179,23 @@
       "ref": "cpe:/:arm:mbed_tls:2.16.6",
       "dependsOn": [
     ]
-    },{
+    },
+    {
       "ref": "cpe:/:contiki-os:contiki-os:3.0",
       "dependsOn": [
     ]
+    },
+    {
+      "ref": "cpe:/a:eclipse:paho_java_client:1.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "cpe:/o:zephyrproject:zephyr:2.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "cpe:/a:wolfssl:wolfssl:4.4.0",
+      "dependsOn": []
     }
   ]
 }
