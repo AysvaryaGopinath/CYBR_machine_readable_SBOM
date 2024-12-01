@@ -55,7 +55,21 @@
       "name" : "FreeRTOS",
       "version": "10.3.1",
       "cpe" :   "cpe:/:amazon:freertos:10.3.1:*:*:*:*:*:*:*",
-      "purl": ""
+      "purl": "",
+      "properties": [
+        {
+          "key": "end-of-support",
+          "value": "N/A"
+        },
+        {
+          "key": "component-support",
+          "value": "Supported"
+        },
+        {
+          "key": "latest-version",
+          "value": "10.5.0"
+        }
+      ]
     },
     {
       "bom-ref": "cpe:/:lwip_project:lwip:2.0.3",
@@ -64,7 +78,21 @@
       "name" : "LwIP",
       "version": "2.0.3",
       "cpe" :   "cpe:/:lwip_project:lwip:2.0.3:*:*:*:*:*:*:*",
-      "purl": ""
+      "purl": "",
+      "properties": [
+        {
+          "key": "end-of-support",
+          "value": "N/A"
+        },
+        {
+          "key": "component-support",
+          "value": "Supported"
+        },
+        {
+          "key": "latest-version",
+          "value": "2.2.0"
+        }
+      ]
     },
     {
       "bom-ref": "cpe:/:arm:mbed_tls:2.16.6",
@@ -73,7 +101,21 @@
       "name" : "mbedTLS",
       "version": "2.16.0",
       "cpe" :   "cpe:/:arm:mbed_tls:2.16.6:*:*:*:*:*:*:*",
-      "purl": ""
+      "purl": "",
+      "properties": [
+        {
+          "key": "end-of-support",
+          "value": "N/A"
+        },
+        {
+          "key": "component-support",
+          "value": "Supported"
+        },
+        {
+          "key": "latest-version",
+          "value": "3.6.2"
+        }
+      ]
     },
     {
       "bom-ref": "cpe:/:contiki-os:contiki-os:3.0",
@@ -82,7 +124,21 @@
       "name" : "Contiki OS",
       "version": "3.0",
       "cpe" :   "cpe:/:contiki-os:contiki-os:3.0:*:*:*:*:*:*:*",
-      "purl": ""
+      "purl": "",
+      "properties": [
+        {
+          "key": "end-of-support",
+          "value": "N/A"
+        },
+        {
+          "key": "component-support",
+          "value": "Supported"
+        },
+        {
+          "key": "latest-version",
+          "value": "4.9"
+        }
+      ]
     },
     {
       "bom-ref": "cpe:/a:eclipse:paho_java_client:1.2.0",
@@ -91,7 +147,7 @@
       "name" : "Paho MQTT",
       "version": "1.2.3",
       "cpe" :   "cpe:/a:eclipse:paho_java_client:1.2.0:*:*:*:*:*:*:*",
-      "purl": ""
+      "purl": "",
       "properties": [
         {
           "key": "end-of-support",
@@ -114,7 +170,7 @@
       "name" : "Zephyr OS",
       "version": "2.3.0",
       "cpe" :   "cpe:/o:zephyrproject:zephyr:2.1.0:*:*:*:*:*:*:*",
-      "purl": ""
+      "purl": "",
       "properties": [
         {
           "key": "end-of-support",
@@ -137,7 +193,7 @@
       "name" : "wolfSSL",
       "version": "4.4.0",
       "cpe" :   "cpe:/a:wolfssl:wolfssl:4.4.0:*:*:*:*:*:*:*",
-      "purl": ""
+      "purl": "",
       "properties": [
         {
           "key": "end-of-support",
@@ -167,23 +223,19 @@
     },
     {
       "ref": "cpe:/:amazon:freertos:10.3.1",
-      "dependsOn": [
-    ]
+      "dependsOn": []
     },
     {
       "ref": "cpe:/:lwip_project:lwip:2.0.3",
-      "dependsOn": [
-    ]
+      "dependsOn": []
     },
     {
       "ref": "cpe:/:arm:mbed_tls:2.16.6",
-      "dependsOn": [
-    ]
+      "dependsOn": []
     },
     {
       "ref": "cpe:/:contiki-os:contiki-os:3.0",
-      "dependsOn": [
-    ]
+      "dependsOn": []
     },
     {
       "ref": "cpe:/a:eclipse:paho_java_client:1.2.0",
