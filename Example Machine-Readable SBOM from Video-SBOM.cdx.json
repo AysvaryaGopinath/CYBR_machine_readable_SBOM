@@ -22,31 +22,73 @@
   },
   "components": [
     {
-      "bom-ref": " cpe:/:coapthon_project:coapthon:4.0.2",
+      "bom-ref": "cpe:2.3:a:coapthon_project:coapthon:4.0.2",
       "type": "library",
       "publisher":"Angelo Castellucci",
       "name": "CoAPthon ",
       "version": "4.0.2 " ,
-       "cpe": "cpe:/:coapthon_project:coapthon:4.0.2:*:*:*:*:*:*:*",
-      "purl": "" 
+       "cpe": "cpe:2.3:a:coapthon_project:coapthon:4.0.2:*:*:*:*:*:*:*",
+      "purl": "" ,
+      "properties": [
+        {
+          "key": "end-of-support",
+          "value": "N/A"
+        },
+        {
+          "key": "component-support",
+          "value": "Supported"
+        },
+        {
+          "key": "latest-version",
+          "value": "4.0.2 "
+        }
+      ]
     },
     {
-      "bom-ref": "cpe:/:uip_project:uip:1.0",
+      "bom-ref": "cpe:2.3:a:uip_project:uip:1.0",
       "type": "library",
       "publisher": "Adam Dunkels ",
       "name": "uIP",
       "version": "1.0",
-      "cpe": "cpe:/:uip_project:uip:1.0:*:*:*:*:*:*:*",
-      "purl": ""
+      "cpe": "cpe:2.3:a:uip_project:uip:1.0:*:*:*:*:*:*:*",
+      "purl": "" ,
+       "properties": [
+        {
+          "key": "end-of-support",
+          "value": "N/A"
+        },
+        {
+          "key": "component-support",
+          "value": "Supported"
+        },
+        {
+          "key": "latest-version",
+          "value": "1.0"
+        }
+      ]
     },
     {
-      "bom-ref": "cpe:/:eclipse:tinydtls:0.9 ",
+      "bom-ref": "cpe:2.3:a:eclipse:tinydtls:0.9",
       "type": "library",
       "publisher":"Eclipse Foundation ",
       "name" : "TinyDTLS",
       "version": "0.9",
-      "cpe" :   "cpe:/:eclipse:tinydtls:0.9:*:*:*:*:*:*:*",
-      "purl": ""
+      "cpe" :   "cpe:2.3:a:eclipse:tinydtls:0.9:*:*:*:*:*:*:*",
+      "purl": "" ,
+       "properties": [
+        {
+          "key": "end-of-support",
+          "value": "N/A"
+        },
+        {
+          "key": "component-support",
+          "value": "Supported"
+        },
+        {
+          "key": "latest-version",
+          "value": "1.2"
+        }
+      ]
     },
     {
       "bom-ref": "cpe:/:amazon:freertos:10.3.1",
