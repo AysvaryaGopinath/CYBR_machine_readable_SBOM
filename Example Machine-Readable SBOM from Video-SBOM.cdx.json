@@ -27,7 +27,7 @@
       "publisher":"Angelo Castellucci",
       "name": "CoAPthon ",
       "version": "4.0.2 " ,
-       "cpe": "cpe:/:coapthon_project:coapthon:4.0.2:*:*:*:*:*:*:*",
+       "cpe": "cpe:2.3:a:coapthon_project:coapthon:4.0.2:*:*:*:*:*:*:*",
       "purl": "" 
     },
     {
@@ -36,7 +36,7 @@
       "publisher": "Adam Dunkels ",
       "name": "uIP",
       "version": "1.0",
-      "cpe": "cpe:/:uip_project:uip:1.0:*:*:*:*:*:*:*",
+      "cpe": "cpe:2.3:a:uip_project:uip:1.0:*:*:*:*:*:*:*",
       "purl": ""
     },
     {
@@ -45,7 +45,7 @@
       "publisher":"Eclipse Foundation ",
       "name" : "TinyDTLS",
       "version": "0.9",
-      "cpe" :   "cpe:/:eclipse:tinydtls:0.9:*:*:*:*:*:*:*",
+      "cpe" :   "cpe:2.3:a:eclipse:tinydtls:0.9:*:*:*:*:*:*:*",
       "purl": ""
     },
     {
