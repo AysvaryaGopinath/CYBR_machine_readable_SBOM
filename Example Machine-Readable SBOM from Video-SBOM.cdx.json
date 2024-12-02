@@ -254,12 +254,15 @@
   ],
   "dependencies": [
     {
-      "ref": "c78082c8af4a8b2112fc7615ed52c51d01",
-      "dependsOn": [
-      ]
+      "ref": "cpe:2.3:a:coapthon_project:coapthon:4.0.2",
+      "dependsOn": []
     },
     {
-      "ref": "90000503820e63519809cafb97419b8e01",
+      "ref": "cpe:2.3:a:uip_project:uip:1.0",
+      "dependsOn": []
+    },
+     {
+      "ref": "cpe:2.3:a:eclipse:tinydtls:0.9",
       "dependsOn": [
     ]
     },
